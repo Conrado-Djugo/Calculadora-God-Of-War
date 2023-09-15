@@ -60,6 +60,32 @@ body{
     padding-right: 5px;
 }
 
+#onButton{
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+#onButton span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 9999px;
+    margin-left: 5px;
+}
+
+#onButton p{
+    color:  white;
+    font-weight: bold;
+}
+
+.onButton{
+    background: black
+}
+
+.ativo{
+    background: greenyellow;
+}
+
 
 
 button{
