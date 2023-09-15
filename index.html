@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/script.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <main id="containe"> 
+        <span id="logo"> 
+            <img src="./img/logo.png" alt="">
+        </span>
+        <div
+         id="resultado">
+         <p id="num"></p>
+        </div>
+
+       <table id="calculadora">
+        <tr>
+            <td> <button onclick="deletAll('')">C</button></td>
+            <td> <button onclick="backNum('')"><ion-icon name="backspace"></ion-icon></ion-icon></button></td>
+            <td> <button onclick="insert('/')" >/</button></td>
+            <td> <button onclick="insert('*')" >x</button></td>
+        </tr>
+        
+        <tr>
+            <td> <button onclick="insert('7')" >7</button></td>
+            <td> <button onclick="insert('8')" >8</button></td>
+            <td> <button onclick="insert('9')" >9</button></td>
+            <td> <button onclick="insert('-')" >-</button></td>
+        </tr>
+        
+        <tr>
+            <td> <button onclick="insert('4')" >4</button></td>
+            <td> <button onclick="insert('5')" >5</button></td>
+            <td> <button onclick="insert('6')" >6</button></td>
+            <td> <button onclick="insert('+')" >+</button></td>
+        </tr>
+        
+        <tr>
+            <td> <button onclick="insert('1')" >1</button></td>
+            <td> <button onclick="insert('2')" >2</button></td>
+            <td> <button onclick="insert('3')" >3</button></td>
+            <td rowspan="2"> <button onclick="confirm('')"  style="height: 90px;">=</button></td>
+        </tr>
+        
+        <tr>
+            <td colspan="2"><button onclick="insert('0')"  style="width: 90px;">0</button></td>
+            <td> <button id="addNum" onclick="addNum('.')" >.</button></td>
+        </tr>
+        
+       </table>
+    </main>
+<footer>
+    <p><img src="./img/Dev.png" alt=""></p>
+</footer>
+</body>
+</html>
